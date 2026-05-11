@@ -1,6 +1,6 @@
 ---
 title: Halaman Home
-status: in_progress
+status: done
 priority: urgent
 type: feature
 tags: [home, hero, animations]

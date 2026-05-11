@@ -1,6 +1,6 @@
 ---
 title: Halaman About (Tentang Kami)
-status: todo
+status: in_progress
 priority: high
 type: feature
 tags: [about, timeline, team]
@@ -13,11 +13,11 @@ position: 2
 Halaman profil perusahaan dengan hero banner statis, profil singkat, timeline milestone animasi, legalitas dalam card, dan grid foto tim direktur.
 
 ## Checklist
-- [ ] Hero banner dengan breadcrumb "Beranda > Tentang Kami"
-- [ ] Section Profil: PT Trans Kontinental Indonesia - sejarah, visi, misi dalam layout yang readable
-- [ ] Timeline animasi: 4 milestone (2013, 2015, 2018, 2023) dengan icon dan deskripsi singkat
-- [ ] Section Legalitas: 3 cards (Izin Mabes Polri, SIA, ABUJAPI) dengan icon centang dan badge
-- [ ] Grid Tim: 3 foto direktur placeholder dengan hover overlay nama & jabatan
+- [x] Buat halaman about.tsx dengan hero banner + breadcrumb
+- [x] Section Profil: company description, visi, misi dalam 2 kolom cards dengan icon
+- [x] Section Timeline animasi: 4 milestones (2013 Berdiri, 2015 Ekspansi, 2018 500+ Personel, 2023 Command Center) dengan alternating left-right layout
+- [x] Section Legalitas: 3 cards dengan icon centang (Izin Mabes Polri, SIA, ABUJAPI)
+- [x] Section Tim: 3 foto direktur grid dengan hover overlay nama + jabatan
 
 ## Acceptance
 - Timeline milestones animate on scroll
