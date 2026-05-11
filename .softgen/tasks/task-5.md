@@ -1,6 +1,6 @@
 ---
 title: Halaman Career (Karir)
-status: todo
+status: done
 priority: medium
 type: feature
 tags: [career, jobs, form]

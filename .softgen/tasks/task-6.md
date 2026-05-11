@@ -1,6 +1,6 @@
 ---
 title: Halaman Contact (Kontak)
-status: todo
+status: done
 priority: medium
 type: feature
 tags: [contact, form, maps]

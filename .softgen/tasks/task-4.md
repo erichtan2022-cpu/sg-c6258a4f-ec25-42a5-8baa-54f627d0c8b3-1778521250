@@ -1,6 +1,6 @@
 ---
 title: Halaman Clients (Klien)
-status: in_progress
+status: done
 priority: medium
 type: feature
 tags: [clients, testimonials]
