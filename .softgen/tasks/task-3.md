@@ -1,6 +1,6 @@
 ---
 title: Halaman Services (Layanan)
-status: in_progress
+status: done
 priority: high
 type: feature
 tags: [services, detail-pages]

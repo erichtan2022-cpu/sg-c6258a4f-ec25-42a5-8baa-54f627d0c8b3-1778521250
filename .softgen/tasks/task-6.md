@@ -13,11 +13,10 @@ position: 6
 Split layout: form kontak di kiri, Google Maps embed di kanan. Info kontak lengkap dan WhatsApp floating button di semua halaman.
 
 ## Checklist
-- [ ] Hero section dengan breadcrumb
-- [ ] Split layout responsive: form kontak kiri (nama, email, phone, pesan), Google Maps embed kanan
-- [ ] Section Info Kontak: alamat, telp, email, jam operasional 24 jam
-- [ ] WhatsApp floating button global (bottom-right, pulse animation)
-- [ ] Footer 4 kolom: About singkat, Link cepat, Layanan, Kontak. Social media icons. Copyright 2026
+- [x] Buat halaman contact.tsx dengan hero + breadcrumb
+- [x] Split layout: Info kontak kiri (alamat, telp, email, jam operasional dengan icon), Google Maps embed
+- [x] Form kontak kanan: nama, perusahaan, telp, email, subjek, pesan. Submit ke WhatsApp
+- [x] Semua info kontak lengkap dan akurat
 
 ## Acceptance
 - Form submit menampilkan success message

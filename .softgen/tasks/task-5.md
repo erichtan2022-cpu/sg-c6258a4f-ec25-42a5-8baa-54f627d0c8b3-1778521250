@@ -13,10 +13,10 @@ position: 5
 Halaman karir dengan lowongan aktif dalam accordion, alur rekrutmen step-by-step, dan form lamaran upload CV.
 
 ## Checklist
-- [ ] Hero: "Bergabung Bersama Pasukan Profesional Kami"
-- [ ] Accordion lowongan: Satpam, Danru, Supervisor - tiap item ada syarat & tombol "Lamar Sekarang"
-- [ ] Section Alur Rekrutmen: 4 step dengan icon animasi (Daftar > Seleksi > Training > Penempatan)
-- [ ] Form lamaran: nama, email, phone, posisi dropdown, upload CV, tombol submit
+- [x] Buat halaman career.tsx dengan hero banner
+- [x] List 3 lowongan dalam accordion: Satpam, Danru, Supervisor dengan syarat & tombol Lamar
+- [x] Section Alur Rekrutmen: 4 step cards dengan icon animasi (Daftar > Seleksi > Training > Penempatan)
+- [x] Form lamaran dengan upload CV dan submit ke WhatsApp
 
 ## Acceptance
 - Accordion expand/collapse smooth
