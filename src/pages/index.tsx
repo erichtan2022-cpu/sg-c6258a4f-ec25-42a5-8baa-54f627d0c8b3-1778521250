@@ -2,6 +2,11 @@ import { Navigation } from "@/components/Navigation";
 import { HeroSlider } from "@/components/HeroSlider";
 import { StatisticsCounter } from "@/components/StatisticsCounter";
 import { ServicesSection } from "@/components/ServicesSection";
+import { WhySection } from "@/components/WhySection";
+import { ClientsCarousel } from "@/components/ClientsCarousel";
+import { CTASection } from "@/components/CTASection";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { SEO } from "@/components/SEO";
 
 export default function Home() {
@@ -17,7 +22,12 @@ export default function Home() {
           <HeroSlider />
           <StatisticsCounter />
           <ServicesSection />
+          <WhySection />
+          <ClientsCarousel />
+          <CTASection />
         </main>
+        <Footer />
+        <WhatsAppButton />
       </div>
     </>
   );

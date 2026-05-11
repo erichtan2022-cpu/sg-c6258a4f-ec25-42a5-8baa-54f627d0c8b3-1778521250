@@ -18,9 +18,9 @@ Halaman beranda dengan hero Ken Burns slides, statistics counters, layanan unggu
 - [x] Hero section dengan 3 slides Ken Burns zoom animation (8 detik per slide), overlay gradient navy transparent, teks + CTA button tiap slide
 - [x] Section Statistics dengan 4 counter animations: 100+ Klien | 1000+ Personel | 10+ Tahun | 24/7 Operational
 - [x] Section Layanan Unggulan: 3 cards dengan icon, judul, deskripsi, hover lift + shadow + border gold
-- [ ] Section Parallax "Mengapa Trans Security": background blur, 4 poin keunggulan dengan icon
-- [ ] Section Logo Carousel Klien: auto-scroll horizontal seamless
-- [ ] Section CTA Parallax: background image, teks persuasif, tombol "Hubungi Kami"
+- [x] Section Parallax "Mengapa Trans Security": background blur, 4 poin keunggulan dengan icon
+- [x] Section Logo Carousel Klien: auto-scroll horizontal seamless
+- [x] Section CTA Parallax: background image, teks persuasif, tombol "Hubungi Kami"
 
 ## Acceptance
 - Hero slides berjalan otomatis dengan Ken Burns zoom effect smooth
