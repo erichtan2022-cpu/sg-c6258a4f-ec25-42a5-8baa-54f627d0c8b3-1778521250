@@ -11,7 +11,7 @@ import { useState } from "react";
 
 interface ServiceDetail {
   slug: string;
-  icon: any;
+  iconName: string;
   title: string;
   description: string;
   longDescription: string;
@@ -22,7 +22,7 @@ interface ServiceDetail {
 const servicesData: ServiceDetail[] = [
   {
     slug: "security-services",
-    icon: Shield,
+    iconName: "Shield",
     title: "Security Services",
     description: "Penyediaan satpam profesional, bodyguard personal, dan event security",
     longDescription: "Kami menyediakan tenaga keamanan profesional yang telah terlatih dan bersertifikat Gada Pratama/Utama. Personel kami siap ditempatkan di berbagai sektor: pabrik, kantor, retail, perumahan, hingga event khusus. Dengan pengalaman lebih dari 10 tahun, kami memahami kebutuhan keamanan spesifik setiap industri.",
@@ -43,7 +43,7 @@ const servicesData: ServiceDetail[] = [
   },
   {
     slug: "security-consultant",
-    icon: Search,
+    iconName: "Search",
     title: "Security Consultant",
     description: "Konsultasi keamanan komprehensif: risk assessment, audit, dan SOP",
     longDescription: "Layanan konsultan keamanan profesional untuk mengidentifikasi gap, menilai risiko, dan merancang sistem keamanan yang efektif. Tim konsultan kami terdiri dari praktisi keamanan berpengalaman yang memahami standar ISO 31000 dan best practices internasional.",
@@ -64,7 +64,7 @@ const servicesData: ServiceDetail[] = [
   },
   {
     slug: "security-training",
-    icon: GraduationCap,
+    iconName: "GraduationCap",
     title: "Security Training",
     description: "Pelatihan Gada Pratama, Gada Madya, dan in-house training",
     longDescription: "Program pelatihan keamanan bersertifikat dan diakui Mabes Polri. Kami menyelenggarakan pelatihan Gada Pratama untuk satpam pemula, Gada Madya untuk supervisor, serta customized in-house training sesuai kebutuhan perusahaan Anda.",
@@ -85,7 +85,7 @@ const servicesData: ServiceDetail[] = [
   },
   {
     slug: "k9-unit",
-    icon: Dog,
+    iconName: "Dog",
     title: "K9 Unit",
     description: "Unit anjing pelacak terlatih untuk deteksi dan keamanan perimeter",
     longDescription: "Layanan K9 Unit dengan anjing terlatih untuk explosive detection, narcotic detection, dan perimeter security. Handler kami telah tersertifikasi dan anjing-anjing kami menjalani training berkelanjutan untuk menjaga performa optimal.",
@@ -106,7 +106,7 @@ const servicesData: ServiceDetail[] = [
   },
   {
     slug: "electronic-security",
-    icon: Cctv,
+    iconName: "Cctv",
     title: "Electronic Security",
     description: "Instalasi CCTV, Access Control, Alarm, dan Fire Detection",
     longDescription: "Solusi keamanan elektronik terintegrasi menggunakan teknologi terkini. Kami menyediakan instalasi, konfigurasi, maintenance, dan monitoring untuk sistem CCTV IP/Analog, Access Control fingerprint/kartu, Alarm System, dan Fire Detection sesuai standar NFPA.",
@@ -127,7 +127,7 @@ const servicesData: ServiceDetail[] = [
   },
   {
     slug: "guard-tour-system",
-    icon: Radio,
+    iconName: "Radio",
     title: "Guard Tour System",
     description: "Monitoring patroli real-time dengan GPS tracking dan reporting",
     longDescription: "Sistem monitoring patroli modern berbasis aplikasi mobile dengan GPS tracking, checkpoint scanning via QR/NFC, dan automated reporting. Command center dapat memonitor aktivitas patroli secara real-time dan menerima alert jika terjadi anomali.",
@@ -148,6 +148,15 @@ const servicesData: ServiceDetail[] = [
   },
 ];
 
+const iconMap = {
+  Shield,
+  Search,
+  GraduationCap,
+  Dog,
+  Cctv,
+  Radio,
+};
+
 interface ServicePageProps {
   service: ServiceDetail;
 }
@@ -167,7 +176,7 @@ export default function ServicePage({ service }: ServicePageProps) {
     window.open(`https://wa.me/6281234567890?text=${whatsappMessage}`, "_blank");
   };
 
-  const Icon = service.icon;
+  const Icon = iconMap[service.iconName as keyof typeof iconMap];
 
   return (
     <>
